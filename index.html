@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <style type="text/css">
+        #caja{
+            display: inline-block;
+        }
+    </style>
+<script>
+    $(document).ready(function(){
+        $("#uno").hover(function(){
+            $("#uno").attr({src: "luna.png"});  
+        },function(){
+            $("#uno").attr({src: "luna1.png"});
+        });
+
+        $("#dos").hover(function(){
+            $("#dos").attr({src: "luna.png"});  
+        },function(){
+            $("#dos").attr({src: "luna1.png"});
+        });
+    });
+</script>
+
+</head>
+<body>
+    <div id="caja"> 
+        <img id="uno" src="luna.png">
+        <img id="dos" src="luna1.png">
+</body>
+</html>
